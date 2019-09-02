@@ -7,10 +7,10 @@ A bunch of random experiments in NLP.
 A cleaned and category labeled dataset of articles/pages in
 <https://simple.wikipedia.org>.
 
-See <https://github.com/codito/nlp-expt/data/simplewiki> and
-[README][simplewiki_readme].
+See [data/simplewiki][simplewiki_data] and [README][simplewiki_readme].
 
-[simplewiki_readme]: https://github.com/codito/nlp-expt/data/simplewiki/README.md
+[simplewiki_data]: https://github.com/codito/nlp-expt/blob/master/data/simplewiki/
+[simplewiki_readme]: https://github.com/codito/nlp-expt/blob/master/data/simplewiki/README.md
 
 ## License
 Datasets are licensed similar to the upstream licenses. Check individual
