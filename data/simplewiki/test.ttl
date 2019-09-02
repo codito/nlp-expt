@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <http://schema.org/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+<https://simple.wikipedia.org/wiki/Special:CategoryDump> a schema:Dataset,
+		owl:Ontology ;
+	cc:license <https://creativecommons.org/licenses/by-sa/3.0/> ;
+	schema:softwareVersion "1.1" ;
+	schema:dateModified "2019-08-17T22:13:44Z"^^xsd:dateTime ;
+	schema:isPartOf <https://simple.wikipedia.org/> ;
+	owl:imports <https://www.mediawiki.org/ontology/ontology.owl> .
+
+<https://simple.wikipedia.org/wiki/Category:Delhi> a mediawiki:Category ;
+	rdfs:label "Delhi" ;
+	mediawiki:pages "11"^^xsd:integer ;
+	mediawiki:subcategories "3"^^xsd:integer .
+
+<https://simple.wikipedia.org/wiki/Category:Delhi_Sultanate> a mediawiki:Category ;
+	rdfs:label "Delhi Sultanate" ;
+	mediawiki:pages "3"^^xsd:integer ;
+	mediawiki:subcategories "4"^^xsd:integer .
+
+<https://simple.wikipedia.org/wiki/Category:Districts_of_Delhi> a mediawiki:Category ;
+	rdfs:label "Districts of Delhi" .
+
+<https://simple.wikipedia.org/wiki/Category:Districts_of_Delhi> mediawiki:isInCategory
+                <https://simple.wikipedia.org/wiki/Category:Delhi> .
+<https://simple.wikipedia.org/wiki/Category:New_Delhi> mediawiki:isInCategory
+		<https://simple.wikipedia.org/wiki/Category:Delhi> .
+<https://simple.wikipedia.org/wiki/Category:People_from_Delhi> mediawiki:isInCategory
+		<https://simple.wikipedia.org/wiki/Category:Delhi> .
+
+<https://simple.wikipedia.org/wiki/Category:Khalji_dynasty> mediawiki:isInCategory <https://simple.wikipedia.org/wiki/Category:Delhi_Sultanate> .
+<https://simple.wikipedia.org/wiki/Category:Mamluk_dynasty_(Delhi)> mediawiki:isInCategory <https://simple.wikipedia.org/wiki/Category:Delhi_Sultanate> .
+<https://simple.wikipedia.org/wiki/Category:Sayyid_Dynasty> mediawiki:isInCategory <https://simple.wikipedia.org/wiki/Category:Delhi_Sultanate> .
+<https://simple.wikipedia.org/wiki/Category:Tughlaq_dynasty> mediawiki:isInCategory <https://simple.wikipedia.org/wiki/Category:Delhi_Sultanate> .
