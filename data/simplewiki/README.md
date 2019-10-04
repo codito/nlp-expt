@@ -19,7 +19,8 @@ following schema.
 }
 ```
 Categories are formatted as a one category per line. Each category has following
-schema.
+schema. `broader` refers to parent categories and `narrower` refers to sub
+categories.
 ```json
 {
   "name": "Canadian food",
@@ -30,6 +31,9 @@ schema.
   "narrower": ["Canadian food companies"]
 }
 ```
+
+### Usage
+
 
 ### Source dumps
 
@@ -65,6 +69,8 @@ We have scripts available to clean the upstream sources.
 See also https://codito.in/simple-wikipedia-dataset
 
 **License**
+Same license as upstream wikipedia datasets.
+
 > All text content is multi-licensed under the Creative Commons
 > Attribution-ShareAlike 3.0 License (CC-BY-SA) and the GNU Free Documentation
 > License (GFDL).
