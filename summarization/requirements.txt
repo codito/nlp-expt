@@ -1,0 +1,7 @@
+-r ../requirements.txt
+transformers
+evaluate
+datasets
+
+rouge_score
+nltk
